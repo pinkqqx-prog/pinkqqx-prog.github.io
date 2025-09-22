@@ -5,7 +5,10 @@ import { resolve } from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/',
+  base: './',
+  build: {
+    outDir: 'docs'
+  },
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
