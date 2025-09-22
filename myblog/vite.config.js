@@ -5,9 +5,7 @@ import { resolve } from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: process.env.NODE_ENV === 'production' 
-    ? '/pinkqqx-prog.github.io/' 
-    : '/',
+  base: '/',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
