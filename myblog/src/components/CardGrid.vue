@@ -138,22 +138,6 @@ const handleClick = (item) => {
   // 发射事件给父组件
   emit('item-click', item)
   
-  // 根据类型处理点击
-  if (item.type === 'pdf') {
-    if (!item.pdfPath) {
-      alert('文档还没整理上传 Ciallo～(∠・ω< )⌒★')
-      return
-    }
-    // 在新窗口打开PDF文件
-    window.open(item.pdfPath, '_blank')
-  } else if (item.type === 'component') {
-    if (!item.url) {
-      alert('文档还没整理上传 Ciallo～(∠・ω< )⌒★')
-      return
-    }
-    // 路由跳转
-    router.push(item.url)
-  }
 }
 </script>
 

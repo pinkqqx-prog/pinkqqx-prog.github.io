@@ -45,9 +45,7 @@ const data = ref([
 ])
 
 const handleItemClick = (item) => {
-  // 可以在这里添加额外的处理逻辑
-  console.log('点击了PDF:', item.title)
-
+ 
    if(!item.pdfPath){
     alert('文档还没整理上传 Ciallo～(∠・ω< )⌒★')  
     return
